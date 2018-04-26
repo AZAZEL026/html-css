@@ -1,0 +1,179 @@
+
+.header {
+  padding: 2.5em;
+  flex: 0 0 var(--grid-2);
+}
+.header__h1 {
+  font-size: 1.375em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navi {
+  padding: 2.5em;
+  flex: 0 0 var(--grid-4);
+}
+.page {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  font-family: "arial", sans-serif;
+  color: #2F4F4F;
+}
+
+
+@media (max-width: 720px) {
+  .header {
+    flex: 0 0 var(--grid-6);
+  }
+}
+
+
+@media (max-width: 720px) {
+  .navi {
+    flex: 0 0 var(--grid-6);
+  }
+}
+
+.l-side {
+  padding: 2.5em;
+  flex: 0 0 var(--grid-2);
+}
+@media (max-width: 720px) {
+  .left-side {
+    display: none;
+  }
+}
+
+.r-side {
+  padding: 2.7em;
+  flex: 0 0 var(--grid-4);
+}
+@media (max-width: 720px) {
+  .right-side {
+    flex: 0 0 var(--grid-6);
+  }
+}
+.p-side {
+  padding-top: 2em;
+}
+
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.links {
+  margin: 0.5em; 
+  position: relative;
+  overflow: hidden;
+}
+
+.content-box {
+  max-height: 290px;
+}
+.page-img {
+  max-width: 100%;
+  display: block;
+  transition: 0.6s;
+  filter: grayscale(100%);
+}
+.links:hover .page-img {
+  filter: grayscale(25%);
+}
+.texts {
+  top: 0;
+  width: 100%;
+  padding: 1em;
+  position: absolute;
+  transition: 0.8s;
+  text-align: center;
+  font-size: 1.1em;
+  background-color: rgba(255, 254, 254, 0.8);
+  color: #222;
+  opacity: 0;
+}
+.links:hover .texts {
+  opacity: 1;
+}
+
+.botom {
+  flex: 0 0 var(--grid-6);
+  display: flex;
+  flex-flow: row wrap;
+}
+.wrapp {
+  margin-left: auto;
+  flex: 0 0 var(--grid-4);
+}
+@media (max-width: 960px) {
+  .wrapp {
+    flex: 0 0 var(--grid-6);
+  }
+}
+@media (max-width: 720px) {
+  .bottom {
+    flex-flow: wrap row;
+  }
+  }
+
+  @media (max-width: 736px) {
+    .links {
+      flex: 1 1 48%;
+    }
+  }
+.bottom-links {
+  padding-left:2em;
+  margin-left:2em;
+  
+}
+.bottom {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  line-height: 1.5em;
+}
+
+.list li {
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
+  list-style: none;
+}
+
+.link {
+  color: rgb(61, 121, 129);
+  text-decoration-line: none;
+  font-weight: bold;
+}
+
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer-sec {
+  padding: 4em 0;
+  display: flex;
+  flex-flow: row nowrap;
+}
+@media (max-width: 720px) {
+  .footer-sec
+  {
+    flex-flow: row wrap;
+  }
+}
+.footer-in {
+  padding: 0.5em;
+  font-size: 0.8em;
+}
+.footer-in {
+  padding-bottom: 1em;
+}
+h4{
+  padding:5px 5px 5px 5px;
+}
